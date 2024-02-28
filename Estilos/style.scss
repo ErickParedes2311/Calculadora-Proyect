@@ -12,7 +12,7 @@ body{
 }
 #contenedor  {
         width: 450px;
-        height: 700px;
+        height: calc(100% - 500px);
         form
         {
                 width: 100%;
@@ -40,8 +40,8 @@ body{
                         font-family: 'Roboto', sans-serif;
                         font-size: 30px;
                         color: black;
-                        padding: 18px;
-                        margin: 15px 5px;
+                        padding: 15px;
+                        margin: 5px 5px;
                         border-radius: 100%;
                         
                 }
