@@ -44,7 +44,8 @@ body {
 
 #contenedor {
   width: 450px;
-  height: 700px;
+  height: -moz-max-content;
+  height: max-content;
 }
 #contenedor form {
   width: 100%;
@@ -71,8 +72,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   color: black;
-  padding: 18px;
-  margin: 15px 5px;
+  padding: 15px;
+  margin: 5px 5px;
   border-radius: 100%;
 }
 #contenedor form .naranja {
@@ -87,5 +88,23 @@ body {
   width: calc(100% - 2px) !important;
   border-radius: 0% !important;
   height: 11.4% !important;
-  margin: 0 !important;
+  margin: 15px 0 0 0 !important;
+}
+
+@media (max-width: 1000px) {
+  #contenedor {
+    width: 450px;
+    height: 70%;
+    position: relative;
+    margin-top: -50px;
+  }
+  #contenedor form input[type=button], #contenedor form input[type=reset] {
+    margin: 8px 8px;
+    border-radius: 100%;
+  }
+  #contenedor form #borrar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

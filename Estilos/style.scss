@@ -12,7 +12,7 @@ body{
 }
 #contenedor  {
         width: 450px;
-        height: calc(100% - 500px);
+        height: max-content;
         form
         {
                 width: 100%;
@@ -60,8 +60,33 @@ body{
                         width: calc(100% - 2px) !important;
                         border-radius: 0% !important;
                         height: 11.4% !important;
-                        margin: 0  !important;
+                        margin: 15px 0 0 0 !important;
                 }
                 
         }
+}
+
+@media (max-width: 1000px)
+{
+        #contenedor  {
+                width: 450px;
+                height: 70%;
+                position: relative;
+                margin-top: -50px;
+                form
+                {
+                        input[type="button"], input[type="reset"]
+                                {
+                                        margin: 8px 8px;
+                                        border-radius: 100%;
+                                        
+                                }
+                         #borrar
+                                {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                }
+                }
+         }
 }
